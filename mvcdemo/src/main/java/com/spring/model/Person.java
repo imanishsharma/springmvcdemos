@@ -2,7 +2,7 @@ package com.spring.model;
 
 public class Person {
 	public String name;
-	public int mobile;
+	public String mobile;
 	public String email;
 	public String getName() {
 		return name;
@@ -10,10 +10,10 @@ public class Person {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getMobile() {
+	public String getMobile() {
 		return mobile;
 	}
-	public void setMobile(int mobile) {
+	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 	public String getEmail() {
@@ -22,6 +22,4 @@ public class Person {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-	
 }

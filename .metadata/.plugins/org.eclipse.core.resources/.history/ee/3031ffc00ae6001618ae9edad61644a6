@@ -1,0 +1,9 @@
+package com.spring.controllers;
+
+public class ProductController {
+	public ProductController()
+	{
+		System.out.println("Created product controller");
+		
+	}
+}

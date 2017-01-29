@@ -12,13 +12,10 @@
 <body>
 <form:form action="addPerson" commandName="person">
   
-<form:label path="name">Name</form:label>
-<form:input path="name"/>
-<form:label path="mobile">Mobile</form:label>
-<form:input path="mobile"/>
-<form:label path="email">E-mail</form:label>
-<form:input path="email"/>
-<input type="submit" value="Submit"/>
+Name:<form:input type="text" path="name"/>
+Mobile:<form:input type="text" path="mobile"/>
+E-mail:<form:input type="text" path="email"/>
+<input type="submit" value="Enter details"/>
 
 </form:form>
 

@@ -19,6 +19,12 @@ public class PersonController
 	@RequestMapping("/addPerson")
 	public ModelAndView getPersonDetails(@ModelAttribute("person") Person person)
 	{   
-		return new ModelAndView("persondetails","person",person);
+		return new ModelAndView("displayDetails","personObj",person);
 	}
+	@RequestMapping("/getPersonForm")
+    public String getPersonForm(Model model)
+    {
+		model.addAttribute("person",new Person());
+    	return "persondetails";
+    }
 }
